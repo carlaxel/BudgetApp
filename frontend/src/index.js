@@ -4,10 +4,11 @@ import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
 import rootReducer from "./redux/reducers";
 import thunk from 'redux-thunk'
-import './index.css';
-import './normalize.css'
+import './css/index.css';
+import './css/normalize.css'
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
+
 
 const store = createStore(
     rootReducer,

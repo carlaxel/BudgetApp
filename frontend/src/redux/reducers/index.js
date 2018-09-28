@@ -1,13 +1,9 @@
 import { combineReducers } from 'redux'
+import login from './login';
+import econDataUpdate from './econDataUpdate';
+import econcat from './econcat';
 
 
-function asyncData(state = {}, action){
-    switch(action.type){
-      case 'FETCHED_DATA':
-        return action.data;
-      default:
-        return state;
-    }
-  }
 
-export default combineReducers({asyncData})
+
+export default combineReducers({login,econDataUpdate,econcat});

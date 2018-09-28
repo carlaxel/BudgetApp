@@ -1,6 +1,6 @@
-export function addTodo(todo){
-    
+export function login(data){
+   
     return {type: "LOGIN" ,
-            todo
+            login:data
             }
 }
